@@ -31,85 +31,146 @@
 <main>
     <div class="menu">
         <img class="menu__logo" src="assets/img/logo-black.svg">
-         <div class="hamburger-menu">
+        <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox">
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
             <ul class="menu__nav">
-                <li><a class="nav__item" href="#">HOME</a></li>
-                <li><a class="nav__item" href="#">ABOUT</a></li>
-                <li><a class="nav__item" href="#">SERVICES</a></li>
-                <li><a class="nav__item" href="#">WORK</a></li>
-                <li><a class="nav__item" href="#">CONTACT</a></li>
+                <li><a class="nav__item active" data-tab="about" href="#">ABOUT</a></li>
+                <li><a class="nav__item" data-tab="services" href="#">SERVICES</a></li>
+                <li><a class="nav__item" data-tab="work" href="#">WORK</a></li>
+                <li><a class="nav__item" data-tab="contact" href="#">CONTACT</a></li>
             </ul>
-       </div>
+        </div>
     </div>
-    <section class="story">
-        <div class="story__items">
-            <h2 class="story__title">OUR STORY</h2>
-            <div class="story__detail"></div>
-        </div>
-        <div class="story__container">
-            <div class="story__about">
-                <h3 class="story__name">
-                    Founded in 2011 by John Mathew Smith, <p class="story__name-dec">Konstruct</p> has become the number
-                    one construction management firm
-                </h3>
-                <p class="story__text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                </p>
-            </div>
-            <div class="story__img">
-                <div class="story__image"
-                     style="background-image: url('./assets/img/story-block_img.png')">
-                    <p class="img__text">WE </br> PLAN</p>
+    <div class="content-wrapper">
+        <section class="about content active" id="about">
+            <div class="story">
+                <div class="tabs__items">
+                    <h2 class="tabs__title">OUR STORY</h2>
+                    <div class="tabs__detail"></div>
                 </div>
-                <div class="story__image"
-                     style="background-image: url('./assets/img/story-block_img2.png')">
-                    <p class="img__text">WE </br> MANAGE</p>
+                <div class="story__container">
+                    <div class="story__about">
+                        <h3 class="story__name">
+                            Founded in 2011 by John Mathew Smith, <p class="story__name-dec">Konstruct</p> has become
+                            the
+                            number
+                            one construction management firm
+                        </h3>
+                        <p class="story__text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut
+                            laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed
+                            diam
+                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        </p>
+                    </div>
+                    <div class="story__img">
+                        <div class="story__image"
+                             style="background-image: url('./assets/img/story-block_img.png')">
+                            <p class="img__text">WE </br> PLAN</p>
+                        </div>
+                        <div class="story__image"
+                             style="background-image: url('./assets/img/story-block_img2.png')">
+                            <p class="img__text">WE </br> MANAGE</p>
+                        </div>
+                        <div class="story__image"
+                             style="background-image: url('./assets/img/story-block_img3.png')">
+                            <p class="img__text">WE </br> BUILD</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="story__image"
-                     style="background-image: url('./assets/img/story-block_img3.png')">
-                    <p class="img__text">WE </br> BUILD</p>
+            </div>
+
+            <div class="capabilities">
+                <div class="capabilities__title__items">
+                    <h2 class="capabilities__title">OUR CAPABILITIES</h2>
+                    <div class="capabilities__detail"></div>
+                </div>
+                <div class="capabilities__items">
+                    <p class="capabilities__link__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed
+                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    <a class="capabilities__link" href="#">ALL SERVICES</a>
+                </div>
+                <div class="capabilities__cards">
+                    <div class="capabilities__card">
+                        <img class="capabilities__card__img" src="assets/img/capabilities-block.svg">
+                        <p class="capabilities__card__title">PROJECT AND CONSTRUCTION MANAGEMENT</p>
+                        <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit,
+                            sed
+                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                    <div class="capabilities__card">
+                        <img class="capabilities__card__img" src="assets/img/capabilities-block2.svg">
+                        <p class="capabilities__card__title">STRUCTURE AUDIT AND MAINTENANCE</p>
+                        <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit,
+                            sed
+                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                    <div class="capabilities__card">
+                        <img class="capabilities__card__img" src="assets/img/capabilities-block3.svg">
+                        <p class="capabilities__card__title">FACTORY CONSTRUCTION AND MODELING</p>
+                        <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit,
+                            sed
+                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="capabilities">
-        <div class="capabilities__title__items">
-            <h2 class="capabilities__title">OUR CAPABILITIES</h2>
-            <div class="capabilities__detail"></div>
-        </div>
-        <div class="capabilities__items">
-            <p class="capabilities__link__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-            <a class="capabilities__link" href="#">ALL SERVICES</a>
-        </div>
-        <div class="capabilities__cards">
-            <div class="capabilities__card">
-                <img class="capabilities__card__img" src="assets/img/capabilities-block.svg">
-                <p class="capabilities__card__title">PROJECT AND CONSTRUCTION MANAGEMENT</p>
-                <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+        </section>
+
+        <section class="services content" id="services" style="margin-top: 57px">
+            <div class="tabs__items">
+                <h2 class="tabs__title">SERVICES</h2>
+                <div class="tabs__detail"></div>
             </div>
-            <div class="capabilities__card">
-                <img class="capabilities__card__img" src="assets/img/capabilities-block2.svg">
-                <p class="capabilities__card__title">STRUCTURE AUDIT AND MAINTENANCE</p>
-                <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            <ul class="tabs__list">
+                <li>Dismantling works</li>
+                <li>Development of design projects</li>
+                <li>Directly, design</li>
+                <li>Repair and decoration of premises</li>
+                <li>Installation of utility networks</li>
+                <li>Technical strengthening of premises, buildings and structures</li>
+                <li>Commercial construction</li>
+            </ul>
+        </section>
+
+        <section class="work content" id="work" style="margin-top: 57px">
+            <div class="tabs__items">
+                <h2 class="tabs__title">WORK</h2>
+                <div class="tabs__detail"></div>
             </div>
-            <div class="capabilities__card">
-                <img class="capabilities__card__img" src="assets/img/capabilities-block3.svg">
-                <p class="capabilities__card__title">FACTORY CONSTRUCTION AND MODELING</p>
-                <p class="capabilities__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            <ul class="tabs__list img-list">
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+                <li><img src="assets/img/header_bg.png" style="width: 200px"></li>
+            </ul>
+        </section>
+
+        <section class="contact content" id="contact" style="margin-top: 57px">
+            <div class="tabs__items">
+                <h2 class="tabs__title">CONTACT</h2>
+                <div class="tabs__detail"></div>
             </div>
-        </div>
-    </section>
+            <ul class="tabs__list">
+                <li>Adress: 213 Baker Street Oriel City Kounty 7000 KNW,Kountry Name</li>
+                <li>Phone: +23 994 233 4022</li>
+                <li>E-mail: info@construct.com</li>
+            </ul>
+        </section>
+    </div>
 </main>
 <footer class="footer">
     <div class="footer__item">
@@ -147,7 +208,7 @@
                     <a href="#">PROJECTS</a>
                     <a href="#">CONTACT US</a>
                 </div>
-                <div class="down__nav">
+                <!-- <div class="down__nav">
                     <a href="#">FAQ</a>
                     <a href="#">TERMS</a>
                     <a href="#">CAREERS</a>
@@ -156,7 +217,7 @@
                     <a href="#">BLOG</a>
                     <a href="#">PARTNERS</a>
                     <a href="#">NEWS</a>
-                </div>
+                </div> -->
                 <div class="down__contact">
                     <a class="up" href="#">CONTACT US</a>
                     <p class="down__contact_adres">213 Baker Street Oriel City Kounty 7000 KNW,Kountry Name</p>
@@ -184,6 +245,7 @@
                               d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
                     </svg>
                 </div>
+                <script src="assets/js/script.js"></script>
             </div>
             <div class="copyright">
                 <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>

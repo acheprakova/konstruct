@@ -125,11 +125,14 @@ footer {
 
 
 .menu {
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-top: 25px;
     padding-bottom: 25px;
     justify-content: space-between;
+
+    /*border-bottom: 1px solid #E6E6E6;*/
 }
 
 .menu__logo {
@@ -152,25 +155,30 @@ footer {
     width: 50%;
 }
 
-.nav__item--active:active {
+.nav__item.active {
     color: var(--colorText3);
 }
+
 
 .story {
     width: 100%;
     text-align: center;
+    margin-top: 57px;
+    margin-bottom: 120px;
 }
 
 .nav__item {
     color: var(--colorText2);
+    cursor: pointer;
 }
 
 .nav__item--active {
     color: var(--colorText2);
 }
 
-.story__title {
+.tabs__title {
     position: relative;
+    text-align: center;
 
     font-family: var(--fontDefault);
     font-size: 18px;
@@ -181,12 +189,12 @@ footer {
 
 }
 
-.story__detail {
+.tabs__detail {
     margin: 0 auto;
     margin-top: 10px;
     width: 50px;
     height: 2px;
-    position: center;
+    position: relative;
     background-color: var(--colorText3);
 }
 
@@ -261,7 +269,8 @@ footer {
 .capabilities__items {
     display: flex;
     flex-direction: row;
-    margin-top: 119px;
+    justify-content: end;
+    margin-top: -35px;
 }
 
 .capabilities__title {
@@ -421,6 +430,7 @@ footer {
     font-family: var(--fontDefault);
     font-size: 13px;
     line-height: 15px;
+    cursor: pointer;
 
     color: var(--colorText);
     border: 1px solid var(--colorText3);
@@ -552,6 +562,7 @@ input:-moz-placeholder {
 
 .down__social svg {
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .copyright {
@@ -563,6 +574,29 @@ input:-moz-placeholder {
     color: var(--colorText);
 }
 
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.tabs__list {
+    margin-top: 50px;
+    list-style: none;
+    font-size: 16px;
+    font-family: var(--fontDefault);
+}
+
+.tabs__list li {
+    margin-bottom: 20px;
+}
+
+.img-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 @media screen and (max-width: 1240px) {
 
 
@@ -592,7 +626,7 @@ input:-moz-placeholder {
         text-align: center;
     }
 
-    .story__items {
+    .tabs__items {
         margin-top: 35px;
     }
 
